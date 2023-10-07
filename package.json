@@ -1,0 +1,19 @@
+{
+  "name": "spolify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MUBEEN1998/Spolify.git"
+  },
+  "author": "mubeen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MUBEEN1998/Spolify/issues"
+  },
+  "homepage": "https://github.com/MUBEEN1998/Spolify#readme"
+}
