@@ -1,13 +1,25 @@
-const express= require('express');
-const server=express();
+import dotenv from 'dotenv';
+import express from 'express';
+import dbconnect from './config/db.js';
+import cors from 'cors';
+import router from './routes/User.js';
+const app=express();
 
 
-server.get("/",(req,res)=>{
-    res.send({name:"mohd mubeen"});
-})
+app.use(express.urlencoded({extended:true}))
+app.use(express.json())
 
-server.listen(8080,()=>{
-    console.log("server is running");
-    console.log(data.toString());
+// dbconnect();
 
-});
+app.use("/api/cafe",router);
+
+// app.get("/",(req,res)=>{
+//     res.send({name:"mohd mubeen"});
+// })
+
+// app.listen(8000,()=>{
+//     console.log("server  is running");
+
+// });
+
+export default app;
